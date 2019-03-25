@@ -23,10 +23,8 @@ class jisuan:
         self.isequalsign = 0
         # 定义一个变量记录是否按下了特殊符号的变量
         self.specialsign = 0
-
         # 调用界面布局的方法
         self.show()
-
         self.root.mainloop()
 
     # 界面的布局方法
@@ -83,58 +81,58 @@ class jisuan:
         btn9.place(x=110, y=115, width=45, height=40)
 
         # 四则运算符号按钮
-        btnjia = tkinter.Button(text='+', bg='#FFFFFF', activebackground='#FFA500', command=lambda: self.presign('+'))
+        btnjia = tkinter.Button(text='＋', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.presign('+'))
         btnjia.place(x=160, y=250, width=45, height=40)
 
-        btnjian = tkinter.Button(text='-', bg='#FFFFFF', activebackground='#FFA500', command=lambda: self.presign('-'))
+        btnjian = tkinter.Button(text='－', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.presign('-'))
         btnjian.place(x=160, y=205, width=45, height=40)
 
-        btncheng = tkinter.Button(text='X', bg='#FFFFFF', activebackground='#FFA500', command=lambda: self.presign('*'))
+        btncheng = tkinter.Button(text='*', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.presign('*'))
         btncheng.place(x=160, y=160, width=45, height=40)
 
-        btnchu = tkinter.Button(text='÷', bg='#FFFFFF', activebackground='#FFA500', command=lambda: self.presign('/'))
+        btnchu = tkinter.Button(text='÷', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.presign('/'))
         btnchu.place(x=160, y=115, width=45, height=40)
 
-        btnjia = tkinter.Button(text='%', bg='#1E90FF', activebackground='#FFA500', command=lambda: self.presign('%'))
-        btnjia.place(x=260, y=75, width=45, height=35)
+        btnjia = tkinter.Button(text='%', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.presign('%'))
+        btnjia.place(x=210, y=75, width=45, height=35)
 
         # 特殊运算符号
 
-        btndaoshu = tkinter.Button(text='1/x', bg='#1E90FF', activebackground='#FFA500', command=lambda: self.special('1/x'))
+        btndaoshu = tkinter.Button(text='1/x', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.special('1/x'))
         btndaoshu.place(x=10, y=75, width=45, height=35)
 
-        btngenhao = tkinter.Button(text='√', bg='#1E90FF', activebackground='#FFA500', command=lambda: self.special('√'))
+        btngenhao = tkinter.Button(text='√', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.special('√'))
         btngenhao.place(x=60, y=75, width=45, height=35)
 
-        btnsqrt = tkinter.Button(text='㎡', bg='#1E90FF', activebackground='#FFA500', command=lambda: self.special('m2'))
+        btnsqrt = tkinter.Button(text='㎡', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.special('m2'))
         btnsqrt.place(x=110, y=75, width=45, height=35)
 
-        btnsqrt = tkinter.Button(text='+/-', bg='#1E90FF', activebackground='#FFA500', command=lambda: self.special('+/-'))
+        btnsqrt = tkinter.Button(text='+/-', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.special('+/-'))
         btnsqrt.place(x=160, y=75, width=45, height=35)
 
-        btnsqrt = tkinter.Button(text='C', bg='#1E90FF', activebackground='#FFA500', command=lambda: self.special('C'))
-        btnsqrt.place(x=210, y=75, width=45, height=35)
+        btnsqrt = tkinter.Button(text='C', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.special('C'))
+        btnsqrt.place(x=260, y=75, width=45, height=35)
 
-        btndel = tkinter.Button(text='←', bg='#1E90FF', activebackground='#FFA500', command=lambda: self.special('←'))
-        btndel.place(x=210, y=160, width=45, height=40)
+        btndel = tkinter.Button(text='←', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.special('←'))
+        btndel.place(x=260, y=160, width=45, height=40)
 
-        btnclear = tkinter.Button(text='CE', bg='#1E90FF', activebackground='#FFA500', command=lambda: self.special('CE'))
-        btnclear.place(x=210, y=115, width=45, height=40)
+        btnclear = tkinter.Button(text='CE', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.special('CE'))
+        btnclear.place(x=260, y=115, width=45, height=40)
 
-        btnden = tkinter.Button(text='=', bg='#0000FF', command=lambda: self.presseq('='))
+        btnden = tkinter.Button(text='=', bg='#2e2c2c', command=lambda: self.presseq('='))
         btnden.place(x=260, y=205, width=45, height=85)
 
-        btnleft = tkinter.Button(text='(', bg='#1E90FF', activebackground='#FFA500')
-        btnleft.place(x=210, y=205, width=45, height=40)
+        btnsin = tkinter.Button(text='sin', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.special('sin'))
+        btnsin.place(x=210, y=115, width=45, height=40)
 
-        btnleft = tkinter.Button(text=')', bg='#1E90FF', activebackground='#FFA500')
-        btnleft.place(x=210, y=250, width=45, height=40)
+        btncos = tkinter.Button(text='cos', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.special('cos'))
+        btncos.place(x=210, y=160, width=45, height=40)
 
-        btnsin = tkinter.Button(text='sin', bg='#1E90FF', activebackground='#FFA500', command=lambda: self.special('sin'))
-        btnsin.place(x=260, y=115, width=45, height=40)
+        btntan = tkinter.Button(text='tan', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.special('tan'))
+        btntan.place(x=210, y=205, width=45, height=40)
 
-        btncos = tkinter.Button(text='cos', bg='#1E90FF', activebackground='#FFA500', command=lambda: self.special('cos'))
-        btncos.place(x=260, y=160, width=45, height=40)
+        btnpi = tkinter.Button(text='π', bg='#4f4a4a', activebackground='#FFA500', command=lambda: self.special('π'))
+        btnpi.place(x=210, y=250, width=45, height=40)
 
     def introduce(self):
         # 创建一个新的主界面
@@ -150,7 +148,7 @@ class jisuan:
 
         # 隐藏窗口，删除图标
         btn = tkinter.Button(self.newroot, bg='white', justify='left', anchor='nw', state='disabled', font=('楷体', 15),
-                             text='这是一个计算器\n其中有加减乘除，开方，平方，倒数，\n相反数以及清除当前数字和清除所有以及sin cos 取余\n感谢使用！')
+                             text='这是一个计算器\n其中有加减乘除，开方，平方，倒数，\n相反数以及清除当前数字和清除所有\n以及sin cos 取余\n感谢使用！')
         btn.place(width=350, height=300)
 
     # 按下数字的函数
@@ -224,6 +222,10 @@ class jisuan:
             res = math.sin(eval(strs))
         elif sign == 'cos':
             res = math.cos(eval(strs))
+        elif sign == 'tan':
+            res = math.sin(eval(strs))/ math.cos(eval(strs))
+        elif sign == 'π':
+            res = math.pi
         elif sign == '√':
             if strs != '除数不能为0':
                 # 判断需要开方的数是否是正数
@@ -231,7 +233,7 @@ class jisuan:
                     # 将计算之后的结果显示在面板上
                     res = math.sqrt(eval(strs))
                 else:
-                    res = strs
+                    res = "不可对负数进行开方"
             else:
                 res = strs
         elif sign == 'm2':
@@ -254,6 +256,7 @@ class jisuan:
             res = 0
         elif sign == 'CE':
             # 将当前面板数字置为0 ，保留列表上次储存的数字
+
             res = 0
         elif sign == '←':
             if strs != '除数不能为0':
